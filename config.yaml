@@ -1,0 +1,26 @@
+# This file defines all the variables and hyperparameters used in this project
+exp_name: MNIST_Lora_base_model
+dataset_name: MNIST
+seed: 42
+device: cuda     
+
+# model hyperparameters
+batch_size: 128
+learning_rate: 0.0001
+num_epochs: 40
+train_split: 0.9    
+num_classes: 10
+input_size: 224                
+lora_rank: 4
+lora_scale: 1.0
+
+# locations where the outputs needs to be saved
+dataset_dir: data/
+log_dir: logs/
+checkpoint_dir: checkpoints/
+tensorboard_dir: runs/
+plots_dir: plots/              
+
+# Log the outputs and saving the best model
+log_to_console: true           
+save_best_only: true            
